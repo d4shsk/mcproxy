@@ -1,0 +1,34 @@
+# Порт, который выдал российский панельный хостинг
+listen-port=28939
+
+# Адрес основного Minecraft-сервера
+backend-host=BACKEND_IP
+backend-port=26289
+
+# Simple Voice Chat: панель должна выдать отдельный UDP-порт
+voice-enabled=true
+voice-listen-port=25794
+
+# UDP-порт Simple Voice Chat на основном сервере
+# voice-backend-host по умолчанию совпадает с backend-host
+voice-backend-port=26289
+
+# Дополнительные параметры
+bind-address=0.0.0.0
+connect-timeout-ms=10000
+max-connections=200
+backlog=128
+socket-buffer-bytes=262144
+tcp-no-delay=true
+
+# Подписанный реальный IP для AuthMe и LibertyBans на Paper/Purpur backend.
+# Тот же секрет должен быть в plugins/MinecraftRelayBackend/router.properties.
+forward-client-ip=true
+forwarding-secret=CHANGE_ME_TO_A_RANDOM_SECRET_OF_AT_LEAST_32_BYTES
+
+# MOTD, который relay показывает в списке серверов, если backend недоступен.
+offline-motd-enabled=true
+offline-motd-line1=&7Извините, главный сервер не отвечает
+offline-motd-line2=&7Он выключен, или у хоста тех работы.
+voice-session-timeout-ms=60000
+voice-max-sessions=200

@@ -1,0 +1,11 @@
+# Локальные конфиги с реальными адресами и секретом
+/relay.properties
+/deploy/proxy/relay.properties
+*.properties.real
+/local/
+
+# Артефакты сборки и скачанные зависимости
+/build/
+
+# macOS
+.DS_Store

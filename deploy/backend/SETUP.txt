@@ -1,0 +1,14 @@
+ЭТО СОДЕРЖИМОЕ НУЖНО УСТАНОВИТЬ НА ОСНОВНОЙ PAPER/PURPUR-СЕРВЕР (BACKEND_IP).
+
+Все JAR из папки plugins положить в папку plugins основного сервера.
+Ни один из этих файлов нельзя переименовывать в server.jar или запускать через java -jar.
+
+После первого запуска открыть:
+plugins/voicechat/voicechat-server.properties
+
+Установить:
+port=26289
+voice_host=
+
+Оставить online-mode=true. Выключить BungeeCord forwarding, Velocity forwarding
+и HAProxy/PROXY protocol. Затем выполнить полный перезапуск, не /reload.

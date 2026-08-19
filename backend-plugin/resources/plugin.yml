@@ -1,0 +1,7 @@
+name: MinecraftRelayBackend
+version: 1.0.1
+main: relay.backend.RelayBackendPlugin
+api-version: '1.13'
+depend: [voicechat]
+folia-supported: true
+description: Real IP forwarding and per-route Simple Voice Chat host for Minecraft TCP Relay
